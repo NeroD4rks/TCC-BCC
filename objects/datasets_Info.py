@@ -10,7 +10,9 @@ from keras.preprocessing.image import ImageDataGenerator
 
 from modelos.alexnet import alexnet
 from modelos.googlenet import googlenet
+from modelos.googlenet_transfer_learning import googlenet_transfer_learning
 from modelos.lenet import lenet
+
 from modelos.resnet50_transfer_learning import resnet50_transfer_learning
 from modelos.vgg_transfer_learning import vgg16_transfer_learning
 from modelos.densenet import densenet
@@ -24,6 +26,7 @@ class DatasetsInfo:
 
         self.models = {
             "googlenet": googlenet,
+            "googlenet_tf": googlenet_transfer_learning,
             "resnet50_tf": resnet50_transfer_learning,
             "alexnet": alexnet,
         }
