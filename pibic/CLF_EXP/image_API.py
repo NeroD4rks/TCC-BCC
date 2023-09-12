@@ -111,7 +111,7 @@ def transform_2darray_into_images(output_path, series_np, img_type, colormap):
     for seq in series_np:
         serie_class = str(int(seq[0]))  # gets the class of the series
         path_class = os.path.join(output_path, serie_class)
-        transform_dataset(seq, colormap, path_class, img_count, img_type)
+        transform_dataset(seq[1:], colormap, path_class, img_count, img_type)
         img_count += 1
 
 

@@ -31,7 +31,7 @@ def run(root_input, root_output):
         log_debug(f"\nNenhuma opção informada, executando todas as representações")
         img_list = ["CWT", "MTF", "RP", "GAF"]
 
-    dirs = ["features_originais", "dataset_22",  "dataset_resampled"]
+    dirs = ["dataset_resampled"]
     for dir in dirs:
         for colormap in cmap_list:
             for img in img_list:
